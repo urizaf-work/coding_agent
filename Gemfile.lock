@@ -1,0 +1,65 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    base64 (0.2.0)
+    date (3.4.1)
+    debug (1.10.0)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
+    dotenv (3.1.8)
+    event_stream_parser (1.0.0)
+    faraday (2.13.1)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-multipart (1.1.0)
+      multipart-post (~> 2.0)
+    faraday-net_http (3.4.0)
+      net-http (>= 0.5.0)
+    faraday-retry (2.3.1)
+      faraday (~> 2.0)
+    io-console (0.8.0)
+    irb (1.15.2)
+      pp (>= 0.6.0)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
+    json (2.12.0)
+    logger (1.7.0)
+    minitest (5.25.5)
+    multipart-post (2.4.1)
+    net-http (0.6.0)
+      uri
+    pp (0.6.2)
+      prettyprint
+    prettyprint (0.2.0)
+    psych (5.2.6)
+      date
+      stringio
+    rdoc (6.13.1)
+      psych (>= 4.0.0)
+    reline (0.6.1)
+      io-console (~> 0.5)
+    ruby_llm (1.2.0)
+      base64
+      event_stream_parser (~> 1)
+      faraday (~> 2)
+      faraday-multipart (~> 1)
+      faraday-net_http (~> 3)
+      faraday-retry (~> 2)
+      zeitwerk (~> 2)
+    stringio (3.1.7)
+    uri (1.0.3)
+    zeitwerk (2.7.2)
+
+PLATFORMS
+  arm64-darwin-24
+  ruby
+
+DEPENDENCIES
+  debug
+  dotenv
+  minitest
+  ruby_llm
+
+BUNDLED WITH
+   2.6.3
