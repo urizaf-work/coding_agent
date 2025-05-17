@@ -1,4 +1,4 @@
-This is a simple coding agent implemented in Ruby, as an experiment.
+This is a simple coding agent implemented in Ruby, as an experiment accompanying my blog post: ["Coding agent in 94 lines of Ruby"](https://radanskoric.com/articles/coding-agent-in-ruby).
 
 # Usage
 
