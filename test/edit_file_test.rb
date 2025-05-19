@@ -16,11 +16,11 @@ class TestEditFile < Minitest::Test
     end
   end
 
-  def test_editing_an_existing_file
+  def test_creating_a_new_file
     filename = Dir.tmpdir + "/foo.txt"
     fail "File #{filename} should not exist before test" if File.exist?(filename)
 
-    result = @tool.execute(path: filename, old_str: "", new_str: "Some fresh content")
+    @tool.execute(path: filename, old_str: "", new_str: "Some fresh content")
     assert_equal "Some fresh content", File.read(filename)
     File.delete(filename)
   end
