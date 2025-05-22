@@ -11,7 +11,9 @@ class Agent
     puts "Initializing agent with nova-lite-v1.0 model..."
     @chat = RubyLLM.chat(
       provider: :openai,
-      model: "nova-lite-v1.0",  # Try a different model from the list
+      # model: "nova-lite-v1.0",  # Try a different model from the list
+      model: "claude-3-7-sonnet",  # Try a different model from the list
+
       assume_model_exists: true
     )
     # puts "Adding tools to agent..."
