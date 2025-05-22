@@ -10,7 +10,7 @@ require "ruby_llm"
 require_relative "src/agent"
 
 # Enable debug logging
-RubyLLM.logger.level = Logger::DEBUG
+# RubyLLM.logger.level = Logger::DEBUG
 
 # Print available models
 # begin
